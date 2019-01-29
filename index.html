@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>valcanas</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../valcanas-test/css/style_valcanas.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../valcanas-test/js/valcanas.js"></script>
+
+</head>
+<body>
+    
+
+    <div class="container">
+        
+        <h1 class="tittle row">V A L C A N A S</h1>
+        
+        <div id="formulario" class="row">
+            <div class="userName row">
+                <label class="col-sm-2" for="name">Nombre:</label>
+                <input class="col-2" type="text" id="name" name="user_name">
+            </div>
+            <div class="userPassword row">
+                    <label class="col-sm-2" for="pass">Password:</label>
+                    <input class="col-2" type="password" id="pass" name="user_pass">
+            </div>
+            <div class="userMail row">
+                    <label class="col-sm-2" for="email">Email:</label>
+                    <input class="col-2" type="email" id="email" name="user_email">
+            </div>
+            <div>
+                <label for="pelis">Genero Pelicula</label>
+                <select name="pelis" id="genero_peli">
+                <option value="terror">Terror</option>
+                <option value="scifi">Sci-fi</option>
+                <option value="fantastico">Fantastico</option>
+                <option value="thriller">Thriller</option>
+                <option value="belica">Belica</option>
+                <option value="comedia">Comedia</option>
+                <option value="romantica">Romantica</option>
+                </select>
+            </div>
+            <div>
+                    <label for="musica">Genero Musical</label>
+                    <select name="musica" id="genero_music">
+                    <option value="metal">Metal</option>
+                    <option value="rock">Rock</option>
+                    <option value="clasica">Clasica</option>
+                    <option value="rap">Rap</option>
+                    <option value="flamenco">Flamenco</option>
+                    <option value="latina">Latina</option>
+                    <option value="folk">Folk</option>
+                    <option value="jazz">Jazz</option>
+                    </select>
+                </div>
+                <div id="birth">
+                        <label for="cumple">Fecha Nac.:</label>
+
+                        <input type="date" id="cumple" name="comple_compis"
+                               value="1970-01-01"
+                               min="1970-01-01" max="2019-12-31">
+                </div>
+                <div>
+                        <label for="msg">Mensaje:</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                      </div>
+                        <div><input type="submit" value="Submit"></div>
+                        <div><input type="reset"></div>
+                    </form>
+                      
+                      <button id="fetch">Buscar respuestas</button>
+
+        </div>
+
+        <div id="responsesContainer">
+                    
+        </div>
+        <div id="scifiUsers">
+    
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+</body>
+</html>
